@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Walking Dead - Film Presentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .movie-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .movie-header img {
+            max-width: 300px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .movie-header img:hover {
+            transform: scale(1.05);
+        }
+        .movie-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .movie-details h1 {
+            margin-top: 0;
+        }
+        .cast-list, .reviews, .trailer {
+            margin-top: 30px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .reviews .review {
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+        .toggle-reviews {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-reviews:hover {
+            background-color: #555;
+        }
+        .menu-toggle {
+            display: none; 
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block; 
+            }
+
+            .menu {
+                display: none; 
+            }
+
+            .menu.active {
+                display: block; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Walking Dead</h1>
+        <nav>
+            <a href="#details" style="color: #fff; margin-right: 10px;">Movie Details</a>
+            <a href="#cast" style="color: #fff; margin-right: 10px;">Cast</a>
+            <a href="#reviews" style="color: #fff; margin-right: 10px;">Reviews</a>
+            <a href="#trailer" style="color: #fff; margin-right: 10px;">Trailer</a>
+            <a href="checklogin.php" style="color: #fff; margin-right: 10px;">Sign In</a>
+            <a href="login.html" style="color: #fff;">Log In</a>
+            <a href="homepage.html" style="color: #fff;margin-right: 10px;">Home</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section id="details" class="movie-header">
+            <img src="https://media.cnn.com/api/v1/images/stellar/prod/191007081422-walking-dead-season-10-premiere.jpg?q=w_3000,h_2000,x_0,y_0,c_fill" alt="The Walking Dead Poster">
+            <div class="movie-details">
+                <h1>The Walking Dead</h1>
+                <p><strong>Genre:</strong> Drama, Horror, Thriller</p>
+                <p><strong>Release Date:</strong> October 31, 2010</p>
+                <p><strong>Creator:</strong> Frank Darabont</p>
+                <p><strong>Number of Seasons:</strong> 11</p>
+                <p><strong>Synopsis:</strong> "The Walking Dead" follows a group of survivors, led by sheriff's deputy Rick Grimes, as they navigate a post-apocalyptic world dominated by zombies, or "walkers". The group struggles to survive and adapt to the new world order while facing threats from both the undead and other surviving humans.</p>
+            </div>
+        </section>
+        <section id="cast" class="cast-list">
+            <h2>Cast</h2>
+            <ul>
+                <li><strong>Andrew Lincoln</strong> as <em>Rick Grimes</em></li>
+                <li><strong>Norman Reedus</strong> as <em>Daryl Dixon</em></li>
+                <li><strong>Steven Yeun</strong> as <em>Glenn Rhee</em></li>
+                <li><strong>Chandler Riggs</strong> as <em>Carl Grimes</em></li>
+            </ul>
+        </section>
+        <section id="reviews" class="reviews">
+            <h2>Reviews</h2>
+            <div class="review">
+                <h3>Review 1</h3>
+                <p><strong>Author:</strong> Sarah Johnson</p>
+                <p><strong>Date:</strong> November 5, 2010</p>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐☆ (4/5)</p>
+                <p><strong>Review Text:</strong> "The Walking Dead" is a gripping portrayal of survival in a world overrun by zombies. The characters are well-developed, and the tension keeps you on the edge of your seat.</p>
+            </div>
+            <div class="review">
+                <h3>Review 2</h3>
+                <p><strong>Author:</strong> Michael Smith</p>
+                <p><strong>Date:</strong> November 8, 2010</p>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐ (5/5)</p>
+                <p><strong>Review Text:</strong> This show is a masterpiece. The storytelling is compelling, the acting is superb, and the special effects are top-notch. "The Walking Dead" sets the standard for post-apocalyptic television.</p>
+            </div>
+        </section>
+        <section id="trailer" class="trailer">
+            <h2>Trailer</h2>
+            <video width="560" height="315" controls>
+                <source src="c:\Users\Andrei\Downloads\The Walking Dead Trailer (First Season).mp4" type="video/mp4">
+                Browserul tău nu suportă elementul video.
+            </video>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 The Beekeeper. Toate drepturile rezervate.</p>
+    </footer>
+         <script>
+           
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+         </script>
+</body>
+</html>

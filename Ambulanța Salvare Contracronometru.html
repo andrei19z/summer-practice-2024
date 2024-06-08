@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulanța: Salvare Contracronometru - Prezentare Film</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .movie-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .movie-header img {
+            max-width: 300px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .movie-header img:hover {
+            transform: scale(1.05);
+        }
+        .movie-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .movie-details h1 {
+            margin-top: 0;
+        }
+        .cast-list, .reviews, .trailer {
+            margin-top: 30px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .reviews .review {
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+        .toggle-reviews {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-reviews:hover {
+            background-color: #555;
+        }
+        .menu-toggle {
+            display: none; 
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block; 
+            }
+
+            .menu {
+                display: none; 
+            }
+
+            .menu.active {
+                display: block; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ambulanța: Salvare Contracronometru</h1>
+        <nav>
+            <a href="#details" style="color: #fff; margin-right: 10px;">Detalii Film</a>
+            <a href="#cast" style="color: #fff; margin-right: 10px;">Distribuție</a>
+            <a href="#reviews" style="color: #fff; margin-right: 10px;">Recenzii</a>
+            <a href="#trailer" style="color: #fff; margin-right: 10px;">Trailer</a>
+            <a href="checklogin.php" style="color: #fff; margin-right: 10px;">Sign In</a>
+            <a href="login.html" style="color: #fff;">Log In</a>
+            <a href="homepage.html" style="color: #fff;margin-right: 10px;">Acasa</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section id="details" class="movie-header">
+            <img src="https://m.media-amazon.com/images/M/MV5BZTBkMjA1OTEtYjIzZi00ZjkxLWIxOTYtYThiM2JkOGQ0ZWZlXkEyXkFqcGdeQXVyNDI3NjU1NzQ@._V1_.jpg" alt="Ambulanța: Salvare Contracronometru Poster">
+            <div class="movie-details">
+                <h1>Ambulanța: Salvare Contracronometru</h1>
+                <p><strong>Gen:</strong> Acțiune, Thriller</p>
+                <p><strong>Data Lansării:</strong> TBD</p>
+                <p><strong>Regizor:</strong>  Michael Bay</p>
+                <p><strong>Durată:</strong> 120 de minute</p>
+                <p><strong>Sinopsis:</strong> "Ambulanța: Salvare Contracronometru" urmărește povestea unei echipe de paramedici care se confruntă cu situații de viață și de moarte în timp ce se străduiesc să ajungă la victimele unui complot terorist.</p>
+            </div>
+        </section>
+        <section id="cast" class="cast-list">
+            <h2>Regizor</h2>
+            <ul>
+                <li> <em> Michael Bay</em></li>
+                
+            </ul>
+        </section>
+        <section id="reviews" class="reviews">
+            <h2>Recenzii</h2>
+            <div class="review">
+                <h3>Recenzia 1</h3>
+                <p><strong>Autor:</strong> Martin</p>
+                <p><strong>Data:</strong> TBD</p>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐ (5/5)</p>
+                <p><strong>Textul recenziei:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem eget ex dapibus scelerisque.</p>
+            </div>
+            
+        </section>
+        <section id="trailer" class="trailer">
+            <h2>Trailer</h2>
+            
+            <video width="560" height="315" controls>
+                <source src="c:\Users\Andrei\Downloads\Ambulance - Official Trailer [HD].mp4" type="video/mp4">
+                Browser-ul dvs. nu suportă elementul video.
+            </video>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ambulanța: Salvare Contracronometru. Toate drepturile rezervate.</p>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

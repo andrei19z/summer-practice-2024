@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beekeeper - Prezentare Film</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .movie-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .movie-header img {
+            max-width: 300px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .movie-header img:hover {
+            transform: scale(1.05);
+        }
+        .movie-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .movie-details h1 {
+            margin-top: 0;
+        }
+        .cast-list, .reviews, .trailer {
+            margin-top: 30px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .reviews .review {
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+        .toggle-reviews {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-reviews:hover {
+            background-color: #555;
+        }
+        .menu-toggle {
+            display: none; 
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block; 
+            }
+
+            .menu {
+                display: none; 
+            }
+
+            .menu.active {
+                display: block; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Beekeeper</h1>
+        <nav>
+            <a href="#details" style="color: #fff; margin-right: 10px;">Detalii Film</a>
+            <a href="#cast" style="color: #fff; margin-right: 10px;">Distribuție</a>
+            <a href="#reviews" style="color: #fff; margin-right: 10px;">Recenzii</a>
+            <a href="#trailer" style="color: #fff; margin-right: 10px;">Trailer</a>
+            <a href="checklogin.php" style="color: #fff; margin-right: 10px;">Sign In</a>
+            <a href="login.html" style="color: #fff;">Log In</a>
+            <a href="homepage.html" style="color: #fff;margin-right: 10px;">Acasa</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section id="details" class="movie-header">
+            <img src="https://m.media-amazon.com/images/M/MV5BYjZmODc5YmQtNjA2Mi00OTIwLWI5OWMtMzgwNGI2NDczNWZlXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg" alt="The Beekeeper Poster">
+            <div class="movie-details">
+                <h1>The Beekeeper</h1>
+                <p><strong>Gen:</strong> Acțiune, Thriller</p>
+                <p><strong>Data Lansării:</strong> 15 noiembrie 2024</p>
+                <p><strong>Regizor:</strong> John Doe</p>
+                <p><strong>Durată:</strong> 120 minute</p>
+                <p><strong>Sinopsis:</strong> "The Beekeeper" urmărește povestea unui fost agent secret care se retrage la o fermă de albine. În momentul în care descoperă o conspirație majoră, trebuie să-și folosească din nou abilitățile pentru a proteja ceea ce iubește.</p>
+            </div>
+        </section>
+        <section id="cast" class="cast-list">
+            <h2>Distribuție</h2>
+            <ul>
+                <li><strong>John Smith</strong> ca <em>Michael, apicultorul</em></li>
+                <li><strong>Jane Doe</strong> ca <em>Sarah, parteneră în investigare</em></li>
+                <li><strong>Robert Brown</strong> ca <em>Villain, antagonistul principal</em></li>
+                <li><strong>Emily White</strong> ca <em>Alice, fiica lui Michael</em></li>
+            </ul>
+        </section>
+        <section id="reviews" class="reviews">
+            <h2>Recenzii</h2>
+            <div class="review">
+                <h3>Recenzia 1</h3>
+                <p><strong>Autor:</strong> Ana Popescu</p>
+                <p><strong>Data:</strong> 1 decembrie 2024</p>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐ (5/5)</p>
+                <p><strong>Textul recenziei:</strong> Un film captivant de la început până la sfârșit! Performanța actorilor este excelentă, iar povestea te ține în suspans.</p>
+            </div>
+            <div class="review">
+                <h3>Recenzia 2</h3>
+                <p><strong>Autor:</strong> Mihai Ionescu</p>
+                <p><strong>Data:</strong> 3 decembrie 2024</p>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐☆ (4/5)</p>
+                <p><strong>Textul recenziei:</strong> O combinație reușită de acțiune și thriller. Unele momente au fost previzibile, dar per total un film foarte bun.</p>
+            </div>
+        </section>
+        <section id="trailer" class="trailer">
+            <h2>Trailer</h2>
+            <video width="560" height="315" controls>
+                <source src="c:\Users\Andrei\Downloads\The Beekeeper - Official Trailer.mp4" type="video/mp4">
+                Browserul tău nu suportă elementul video.
+            </video>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 The Beekeeper. Toate drepturile rezervate.</p>
+    </footer>
+         <script>
+           
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+         </script>
+</body>
+</html>

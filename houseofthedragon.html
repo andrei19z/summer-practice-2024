@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of the Dragon - Presentation</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .show-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .show-header img {
+            max-width: 300px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .show-header img:hover {
+            transform: scale(1.05);
+        }
+        .show-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .show-details h1 {
+            margin-top: 0;
+        }
+        .cast-list, .reviews, .trailer {
+            margin-top: 30px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .reviews .review {
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+        .toggle-reviews {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-reviews:hover {
+            background-color: #555;
+        }
+        .menu-toggle {
+            display: none; 
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block; 
+            }
+
+            .menu {
+                display: none; 
+            }
+
+            .menu.active {
+                display: block; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>House of the Dragon</h1>
+        <nav>
+            <a href="#details" style="color: #fff; margin-right: 10px;">Show Details</a>
+            <a href="#cast" style="color: #fff; margin-right: 10px;">Cast</a>
+            <a href="#reviews" style="color: #fff; margin-right: 10px;">Reviews</a>
+            <a href="#trailer" style="color: #fff; margin-right: 10px;">Trailer</a>
+            <a href="checklogin.php" style="color: #fff; margin-right: 10px;">Sign In</a>
+            <a href="login.html" style="color: #fff;">Log In</a>
+            <a href="homepage.html" style="color: #fff;margin-right: 10px;">Home</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section id="details" class="show-header">
+            <img src="https://static.cinemagia.ro/img/db/movie/29/56/929/house-of-the-dragon-557489l.jpg" alt="House of the Dragon Poster">
+            <div class="show-details">
+                <h1>House of the Dragon</h1>
+                <p><strong>Genre:</strong> Fantasy, Drama</p>
+                <p><strong>Release Date:</strong> TBD</p>
+                <p><strong>Director:</strong> TBD</p>
+                <p><strong>Duration:</strong> TBD</p>
+                <p><strong>Synopsis:</strong> "House of the Dragon" is a prequel to the hit series Game of Thrones, set centuries before the events of the original show. It will explore the history of the Targaryen family and their rule over Westeros.</p>
+            </div>
+        </section>
+        <section id="cast" class="cast-list">
+            <h2>Cast</h2>
+            <ul>
+                <li><strong>Actor Name</strong> as <em>Character Name</em></li>
+                
+            </ul>
+        </section>
+        <section id="reviews" class="reviews">
+            <h2>Reviews</h2>
+            <div class="review">
+                <h3>Review 1</h3>
+                <p><strong>Author:</strong> John Doe</p>
+                <p><strong>Date:</strong> TBD</p>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐ (5/5)</p>
+                <p><strong>Review Text:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem eget ex dapibus scelerisque.</p>
+            </div>
+           
+        </section>
+        <section id="trailer" class="trailer">
+            <h2>Trailer</h2>
+            
+            <video width="560" height="315" controls>
+                <source src="c:\Users\Andrei\Downloads\House of the Dragon Season 2 _ Official Trailer _ Max.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 House of the Dragon. All rights reserved.</p>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

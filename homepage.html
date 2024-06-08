@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filme Recomandate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#444;
+        }
+        header {
+            background: linear-gradient(to right, #333, #444);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            animation: headerAnimation 2s ease-in-out infinite alternate;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes headerAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+        .movie {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .movie:hover {
+            transform: translateY(-5px);
+        }
+        .movie img {
+            max-width: 200px;
+            border-radius: 8px;
+            margin-right: 20px;
+            transition: transform 0.3s;
+        }
+        .movie:hover img {
+            transform: scale(1.1);
+        }
+        .movie-info {
+            flex: 1;
+        }
+        .movie h2 {
+            margin-top: 0;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .movie:hover h2 {
+            color: #050202;
+        }
+        .movie p {
+            margin-bottom: 10px;
+            color: #666;
+            transition: color 0.3s;
+        }
+        .movie:hover p {
+            color: #333;
+        }
+        .movie .description {
+            color: #333;
+            transition: color 0.3s;
+        }
+        .movie:hover .description {
+            color: #444;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Filme și seriale recomandate</h1> 
+        </div>
+    </header>
+    <footer>
+    </footer>
+
+    <div id="container">
+        <div class="movie">
+            <a href="thebeekeeper.html">
+                <img src="https://m.media-amazon.com/images/M/MV5BYjZmODc5YmQtNjA2Mi00OTIwLWI5OWMtMzgwNGI2NDczNWZlXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg" alt="Imagine Film">
+            </a>
+            <div class="movie-info">
+                <h2>The Beekeeper</h2>
+                <p>Gen: Acțiune</p>
+                <p>Regizor: David Ayer</p>
+                <p>Anul: 2024</p>
+                <p class="description">One man's brutal campaign for vengeance takes on national stakes after he is revealed to be a former operative of a powerful and clandestine organization known as "Beekeepers."</p>
+            </div>
+        </div>
+    </div>
+    
+
+        <div class="movie">
+            <a href="thewalkingdead.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BNzI5MjUyYTEtMTljZC00NGI5LWFhNWYtYjY0ZTQ5YmEzMWRjXkEyXkFqcGdeQXVyMTY3MDE5MDY1._V1_.jpg" alt="Imagine Film">
+            </a>
+            <div class="movie-info">
+                <h2>The Walking Dead</h2>
+                <p>Gen: Horror</p>
+                <p>Regizor: Jane Doe</p>
+                <p>Anul: 2010</p>
+                <p class="description">The Walking Dead: Invazia zombi este un serial de televiziune american post-apocaliptic horror produs de Frank Darabont pe baza seriei omonime de benzi desenate din 2003 The Walking Dead de Robert Kirkman, Tony Moore și Charlie Adlard..</p>
+            </div>
+        </div>
+        <div class="movie">
+            <a href="houseofthedragon.html">
+            <img src="https://sm.ign.com/ign_nordic/gallery/h/house-of-t/house-of-the-dragon-season-2-character-posters_59xt.jpg" alt="Imagine Film">
+            </a>
+            <div class="movie-info">
+                <h2>House of the Dragon</h2>
+                <p>Gen: Actiune</p>
+                <p>Regizor: 	
+                    Ryan Condal
+                    George R. R. Martin</p>
+                <p>Anul: 2022</p>
+                <p class="description"> House of the Dragon is an American fantasy drama television series created by George R. R. Martin and Ryan Condal for HBO. A prequel to Game of Thrones (2011–2019), it is the second television series in the A Song of Ice and Fire franchise.</p>
+            </div>
+        </div>
+        <div class="movie">
+            <a href="Ambulanța Salvare Contracronometru.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BYjUyN2VlZGEtNGEyZC00YjViLTgwYmQtZDJiM2FlOTU3Mjg2XkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_.jpg" alt="Imagine Film">
+            </a>
+            <div class="movie-info">
+                <h2>Ambulanța: Salvare Contracronometru </h2>
+                <p>Gen: Aventura</p>
+                <p>Regizor: Michael Bay</p>
+                <p>Anul: 2020</p>
+                <p class="description"> Ambulance este un film thriller de acțiune american din 2022,regizat și co-produs de Michael Bay și scris de Chris Fedak. O coproducție între New Republic Pictures , Project X Entertainment și Bay Films, este un remake al filmului danez Ambulancen din 2005 . Îi joacă pe Jake Gyllenhaal și Yahya Abdul-Mateen II ca frați adoptivi care deturnează o ambulanță după ce au jefuit o bancă și iau ostatici un paramedic și un ofițer de poliție.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+        <script>
+        </script>
+</body>
+</html>
